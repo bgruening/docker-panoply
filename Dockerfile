@@ -35,11 +35,11 @@ ENV JAVA_HOME /opt/jdk
 ENV PATH ${PATH}:${JAVA_HOME}/bin   
 
 
-COPY PanoplyJ-4.12.5.tgz /opt/PanoplyJ-4.12.5.tgz
+COPY PanoplyJ-5.2.9.tgz /opt/PanoplyJ-5.2.9.tgz
 
 RUN cd /opt && \ 
-    tar zxvf PanoplyJ-4.12.5.tgz && \
-    rm -rf PanoplyJ-4.12.5.tgz
+    tar zxvf PanoplyJ-5.2.9.tgz && \
+    rm -rf PanoplyJ-5.2.9.tgz
 
 COPY colorbars.tar /opt/PanoplyJ/colorbars.tar
 
